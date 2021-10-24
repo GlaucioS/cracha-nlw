@@ -42,9 +42,13 @@ function getGitHubProfileInfos() {
     .then(data => {
       //Seta a imagem do avatar (Método DOM).
       avatarimg.src = data.avatar_url
+      //Seta o nome
       avatarname.textContent = data.name
+      //Seta o link para o Git
       avatarurl.href = data.html_url
+      //Seta o identificador do login
       avatarlogin.textContent = data.login
+      //Seta a biografia
       avatarbio.textContent = data.bio
     })
 }
