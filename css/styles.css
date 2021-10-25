@@ -20,9 +20,14 @@ body {
 }
 
 main {
-  background: url(../images/background.svg);
-  width: 375px;
-  height: 812px;
+  /*Alteração do background para não repetir, ficar centralizado e cobrir todo o espaço*/
+  background: url(../images/background.svg) no-repeat center/cover;
+  /*Alteração do atrinuto width para a unidade vw (foi possível usar pois setamos a tag meta viewport)*/
+  width: 100vw;
+  /*Ajustado o atributo height para ajustar a altura em 100vw*/
+  height: 100vw;
+  /*Definimos a altura mínima de 812px*/
+  min-height: 812px;
 }
 
 .conteiner {
